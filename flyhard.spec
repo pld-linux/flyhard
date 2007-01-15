@@ -8,6 +8,8 @@ Group:		X11/Applications/Games
 Source0:	http://www.markboyd.me.uk/games/flyhard/%{name}-%{version}.tar.gz
 # Source0-md5:	97a94d94b3f59d5dc56fa17a02fd1663
 URL:		http://www.markboyd.me.uk/games/flyhard/flyhard.html
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_mixer-devel
 BuildRequires:	zlib-devel
