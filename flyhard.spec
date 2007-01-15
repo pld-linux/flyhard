@@ -8,10 +8,10 @@ Group:		X11/Applications/Games
 Source0:	http://www.markboyd.me.uk/games/flyhard/%{name}-%{version}.tar.gz
 # Source0-md5:	97a94d94b3f59d5dc56fa17a02fd1663
 URL:		http://www.markboyd.me.uk/games/flyhard/flyhard.html
-BuildRequires:	autoconf
-BuildRequires:	automake
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_mixer-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -21,7 +21,7 @@ carry them off, and drop them somewhere.
 
 %description -l pl
 Jest to gra podobna do gry Thrust - gracz unosi rzeczy swoim statkiem,
-przesnosi je i gdzie¶ upuszcza.
+przenosi je i gdzie¶ upuszcza.
 
 %prep
 %setup -q
