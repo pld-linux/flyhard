@@ -1,5 +1,5 @@
 Summary:	Thrust clone
-Summary(pl):	Klon gry Thrust
+Summary(pl.UTF-8):   Klon gry Thrust
 Name:		flyhard
 Version:	0.3
 Release:	1
@@ -19,9 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This is a game similar to Thrust - you pick things up with your ship,
 carry them off, and drop them somewhere.
 
-%description -l pl
+%description -l pl.UTF-8
 Jest to gra podobna do gry Thrust - gracz unosi rzeczy swoim statkiem,
-przenosi je i gdzie∂ upuszcza.
+przenosi je i gdzie≈õ upuszcza.
 
 %prep
 %setup -q
