@@ -1,5 +1,5 @@
 Summary:	Thrust clone
-Summary(pl.UTF-8):   Klon gry Thrust
+Summary(pl.UTF-8):	Klon gry Thrust
 Name:		flyhard
 Version:	0.3
 Release:	1
