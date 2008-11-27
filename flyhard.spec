@@ -1,17 +1,19 @@
 Summary:	Thrust clone
 Summary(pl.UTF-8):	Klon gry Thrust
 Name:		flyhard
-Version:	0.3
+Version:	0.41
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://www.markboyd.me.uk/games/flyhard/%{name}-%{version}.tar.gz
-# Source0-md5:	97a94d94b3f59d5dc56fa17a02fd1663
+# Source0-md5:	869bc989e346388b715a3a7479ab673e
+Patch0:		%{name}-transform.patch
 URL:		http://www.markboyd.me.uk/games/flyhard/flyhard.html
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_mixer-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	sed >= 4.0
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -25,6 +27,9 @@ przenosi je i gdzieś upuszcza.
 
 %prep
 %setup -q
+%patch0 -p1
+
+%{__sed} -i -e 's,\$(savedir),\$(DESTDIR)$(savedir),' src/Makefile.am
 
 %build
 %{__aclocal}
