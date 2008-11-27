@@ -1,0 +1,10 @@
+--- flyhard-0.41/src/loadimag.cpp~	2008-11-22 17:46:57.000000000 +0100
++++ flyhard-0.41/src/loadimag.cpp	2008-11-27 14:44:20.000000000 +0100
+@@ -20,6 +20,7 @@
+ #include <SDL_inc.h>
+ #include <png.h>
+ #include <cctype>
++#include <algorithm>
+ 
+ #include <iostream>
+ 
