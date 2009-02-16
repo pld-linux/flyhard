@@ -1,12 +1,12 @@
-Summary:	Thrust clone
 Summary(pl.UTF-8):	Klon gry Thrust
+Summary:	Thrust clone
 Name:		flyhard
-Version:	0.41
+Version:	0.42
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://www.markboyd.me.uk/games/flyhard/%{name}-%{version}.tar.gz
-# Source0-md5:	869bc989e346388b715a3a7479ab673e
+# Source0-md5:	e87a00f59087b6bbf04e78e69407ffcb
 Patch0:		%{name}-transform.patch
 URL:		http://www.markboyd.me.uk/games/flyhard/flyhard.html
 BuildRequires:	SDL-devel
